@@ -132,6 +132,9 @@ body{
     justify-content: space-between;
     margin-bottom: 50px;
 }
+.multiplataformas-1{
+    padding: 0 25px;
+}
 .multiplataformas-1 img {
     width: 200px;
 
@@ -140,8 +143,74 @@ body{
     position: absolute;
     top:0;
     right: 0;
-    width: 722px;
-    margin-top: 650px;
+    width: 450px;
+    margin-top: 240px;
     
 }
-47:00
+.multiplataformas-1 h3{
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+.services {
+    background-image: linear-gradient(
+        rgba(blue),
+        rgba(0, 0, 0.7)),
+        url(max.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+.service-content{
+    text-align: center;
+}
+.service-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color:#F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px
+}
+.service-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.service-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+.service-1{
+    padding: 0 100px;
+}
+.service-1 img {
+    width: 25px;
+    margin-bottom: 15px;
+    
+}
+.service-1 h3{
+    color:#EACCB3;
+    font-size: 18px;
+}
+.general {
+    display:flex;
+
+}
+.general-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+
+}
+.general-2{
+    background-image: url(max.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
