@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/Registrar.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="css/Icon.jpeg">
-<title>Register user</title>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/Registrar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="css/Icon.jpeg">
+    <title>Registrar Usuario</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    
     <div class="container">
-    <h2>Registro</h2>
+        <h2>Registro</h2>
 
-    <form id="dataForm">
+        <form id="dataForm">
+            <div id="tabla1">
+                <div class="form-group">
+                    <label for="nombre">Nombre <span style="color: red;">*</span></label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellidos <span style="color: red;">*</span></label>
+                    <input type="text" class="form-control" id="apellido" name="apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" id="domicilio" name="domicilio">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono <span style="color: red;">*</span></label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico <span style="color: red;">*</span></label>
+                    <input type="email" class="form-control" id="email" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña <span style="color: red;">*</span></label>
+                    <input type="password" class="form-control" id="password" name="contrasena" required minlength="6">
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn-submit" id="enviar">Enviar</button>
 
-        <div id="tabla1">
-        <div class="form-group">
-            <label for="nombre">Nombre <span style="color: red;">*</span></label>
-            <input type="text" class="form-control" id="nombre" name="nombres" required>
-            <i class="fas fa-user icon"></i>
-        </div>
-        <div class="form-group">
-            <label for="apellido">Apellidos <span style="color: red;">*</span></label>
-            <input type="text" class="form-control" id="apellido" name="apellidos" required>
-            <i class="fas fa-user icon"></i>
-        </div>
-        <div class="form-group">
-            <label for="matricula">Domicilio</label>
-            <input type="text" class="form-control" id="matricula" name="matricula">
-            <i class="fas fa-id-card icon"></i>
-        </div>
-        <div class="form-group">
-            <label for="number">Numero de telefono</label>
-            <input type="text" class="form-control" id="fechaNacimiento" name="edad">
-            
-        </div>
-        
-        <div class=""form-group>
-        <button type="button" class="btn-submit" id="agregarBtn">Enviar</button>
-        
-           
+                </div>
+            </div>
+        </form>
+
+        <br><br>
+        <a href="index.html" id="BOTONES" target="_self">Menú Principal</a>
     </div>
-    </div>
-
-    </form>
-    <br>
-    <br>
-    <a href="index.html" id="BOTONES" target="_self">Menu Principal</a>
-    </div>
+    <script src="Registrar.js"></script>
 
 
-   
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="js/Registrar.js"></script>
-
+    
 </body>
 </html>
