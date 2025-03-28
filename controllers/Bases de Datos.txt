@@ -1,0 +1,93 @@
+Bases de Datos;
+
+CREATE TABLE spotify_general (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE spotify_v2 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE spotify_v3 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE spotify_v4 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE spotify_v5 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE spotify_v6 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE spotify_v7 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE spotify_v8 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+
+
+
+CREATE TABLE max_general (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE max_v1 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE max_v2 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+
+
+
+
+CREATE TABLE disney_general (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE disney_v1 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE disney_v2 (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
