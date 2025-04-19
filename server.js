@@ -29,6 +29,11 @@ db.connect((err) => {
     console.log("Conexión exitosa a la base de datos.");
 });
 
+
+
+
+
+
 // Ruta para registrar usuarios (con contraseña cifrada)
 app.post("/registrar", async (req, res) => {
     const { nombre, apellidos, domicilio, telefono, correo, password } = req.body;

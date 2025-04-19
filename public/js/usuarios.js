@@ -23,3 +23,4 @@ document.addEventListener("DOMContentLoaded", async () => {
         Swal.fire("Error", "No se pudieron cargar los usuarios", "error");
     }
 });
+
