@@ -3,51 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Usuarios</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background: linear-gradient(135deg, #000428, #93291e);
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 90%;
-            margin: auto;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid white;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-    </style>
+    <title>Registros</title>
+    <link rel="stylesheet" href="/public/css/Registros.css">
+
 </head>
 <body>
     <div class="container">
@@ -56,7 +14,7 @@
             <nav>
                 <ul>
                     <li><a href="clientes_Totales.html" class="active">Clientes Totales</a></li>
-                    <li><a href="spotify.html">Spotify</a></li>
+                    <li><a href="/views/">Spotify</a></li>
                     <li><a href="#">Max</a></li>
                     <li><a href="#">Disney</a></li>
                     <li><a href="Netflix.html">Netflix</a></li>
@@ -76,6 +34,7 @@
                         <th>Domicilio</th>
                         <th>Teléfono</th>
                         <th>Correo</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody id="tablaUsuarios">
@@ -86,6 +45,6 @@
         <br>
         <a href="index.html" class="text-white underline">Volver al Inicio</a>
     </div>
-    <script src="js/usuarios.js"></script>
+    <script src="/public/js/usuarios.js"></script>
 </body>
 </html>

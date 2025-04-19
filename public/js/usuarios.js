@@ -14,13 +14,41 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <td>${usuario.domicilio}</td>
                 <td>${usuario.telefono}</td>
                 <td>${usuario.correo}</td>
+                <td>
+                    <button onclick="editarUsuario(${usuario.id})">Editar</button>
+                    <button onclick="eliminarUsuario(${usuario.id})">Eliminar</button>
+                </td>
             `;
             tablaUsuarios.appendChild(fila);
         });
 
     } catch (error) {
         console.error("Error al obtener los usuarios:", error);
-        Swal.fire("Error", "No se pudieron cargar los usuarios", "error");
     }
 });
 
+// FUNCIONES FUERA DEL DOMContentLoaded
+
+function eliminarUsuario(id) {
+    if (confirm("¿Estás seguro de eliminar este usuario?")) {
+        fetch(`http://localhost:3000/usuarios/${id}`, {
+            method: "DELETE"
+        })
+        .then(response => {
+            if (!response.ok) throw new Error("Error al eliminar usuario");
+            return response.json();
+        })
+        .then(() => {
+            alert("Usuario eliminado correctamente");
+            location.reload();
+        })
+        .catch(error => {
+            console.error(error);
+            alert("Error al eliminar el usuario");
+        });
+    }
+}
+
+function editarUsuario(id) {
+    window.location.href = `editarUsuario.html?id=${id}`;
+}

@@ -32,8 +32,6 @@ db.connect((err) => {
 
 
 
-
-
 // Ruta para registrar usuarios (con contraseña cifrada)
 app.post("/registrar", async (req, res) => {
     const { nombre, apellidos, domicilio, telefono, correo, password } = req.body;
@@ -126,3 +124,23 @@ app.post("/registrar", async (req, res) => {
         res.status(500).send("Error en el servidor");
     }
 });
+
+// Ruta para eliminar un usuario
+app.delete("/usuarios/:id", (req, res) => {
+    const { id } = req.params;
+
+    const query = "DELETE FROM usuarios WHERE id = ?";
+    db.query(query, [id], (err, result) => {
+        if (err) {
+            console.error("Error al eliminar el usuario:", err);
+            return res.status(500).json({ error: "Error al eliminar el usuario" });
+        }
+
+        if (result.affectedRows === 0) {
+            return res.status(404).json({ error: "Usuario no encontrado" });
+        }
+
+        res.status(200).json({ mensaje: "Usuario eliminado correctamente" });
+    });
+});
+
